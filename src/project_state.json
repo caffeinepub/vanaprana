@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a brand website for Vanaprana (\"Forest breath\"), a sustainable jute bag brand made in India and exported to Portugal, focusing on a digital-first, credibility-focused communication plan for B2B audiences (distributors, retailers, institutional buyers) with selective B2C visibility, excluding the IMC Objectives and IMC Plan pages/sections.",
+  "architectural_notes": [
+    "Website messaging should be digital-first and credibility-focused (sustainability/compliance narrative over mass advertising).",
+    "Site should support B2B audiences (distributors, retailers, institutional buyers) as primary gatekeepers, with selective B2C visibility.",
+    "Provide consistent brand-controlled messaging assets and product narratives to enable channel partners.",
+    "Remove/omit IMC Objectives and IMC Plan sections/pages from the website."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-multi-section-marketing-website-for-the-brand-vanaprana-forest-breath-that-clearly-communicates-the-brand-story-rare-term-for-vital-eco-life-force-product-focus-sustainable-jute-carry-bags-and-export-context-made-in-india-exported-to-portugal-all-user-facing-copy-must-be-in-english",
+      "title": "Create a multi-section marketing website for the brand “Vanaprana” (“Forest breath”) that clearly communicates the brand story (rare term for vital eco-life force), product focus (sustainable jute carry bags), and export context (made in India, exported to Portugal). All user-facing copy must be in English.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-dedicated-imc-objectives-section-page-that-reflects-slide-22-content-establish-awareness-in-portugal-build-credibility-with-distributors-retailers-institutional-buyers-encourage-trial-adoption-via-selective-b2b-b2c-touchpoints-and-support-channel-partners-with-consistent-messaging-include-the-objective-breakdown-awareness-positioning-channel-enablement-trial-stimulation-reinforcement-and-the-rationale-that-export-imc-is-channel-first-trust-building-among-intermediaries",
+      "title": "Add a dedicated “IMC Objectives” section/page that reflects Slide 22 content: establish awareness in Portugal, build credibility with distributors/retailers/institutional buyers, encourage trial adoption via selective B2B/B2C touchpoints, and support channel partners with consistent messaging. Include the objective breakdown (Awareness, Positioning, Channel enablement, Trial stimulation, Reinforcement) and the rationale that export IMC is channel-first (trust-building among intermediaries).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-dedicated-imc-plan-section-page-that-reflects-slide-23-content-digital-first-strategy-strong-b2b-orientation-with-selective-b2c-visibility-distributor-retailer-supported-promotion-cost-efficient-credibility-focused-media-mix-include-the-imc-tool-mix-digital-media-website-instagram-linkedin-presence-described-trade-promotion-digital-catalogues-pitch-decks-sample-kits-pr-storytelling-collaboration-and-pos-support-eco-tags-qr-info-in-store-display-cards-explicitly-state-that-mass-media-tv-radio-newspapers-is-excluded-due-to-cost-targeting-inefficiency-for-niche-sustainable-products",
+      "title": "Add a dedicated “IMC Plan” section/page that reflects Slide 23 content: digital-first strategy, strong B2B orientation with selective B2C visibility, distributor/retailer-supported promotion, cost-efficient credibility-focused media mix. Include the IMC tool mix: digital media (website + Instagram/LinkedIn presence described), trade promotion (digital catalogues, pitch decks, sample kits), PR storytelling/collaboration, and POS support (eco-tags/QR info, in-store display cards). Explicitly state that mass media (TV/radio/newspapers) is excluded due to cost/targeting inefficiency for niche sustainable products.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-b2b-focused-for-distributors-retailers-area-that-supports-credibility-and-ease-of-adoption-by-presenting-key-selling-points-sustainability-durability-handcrafted-value-export-readiness-messaging-and-a-clear-call-to-action-to-request-a-quote-sample-pilot-order",
+      "title": "Create a B2B-focused “For Distributors & Retailers” area that supports credibility and ease of adoption by presenting: key selling points (sustainability, durability, handcrafted value), export readiness messaging, and a clear call-to-action to request a quote/sample/pilot order.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-contact-inquiry-form-for-b2b-and-b2c-touchpoints-name-email-company-optional-buyer-type-selector-message-consent-checkbox-store-submissions-on-the-internet-computer-backend-so-inquiries-are-not-lost-and-can-be-retrieved-later",
+      "title": "Implement a contact / inquiry form for B2B and B2C touchpoints (name, email, company optional, buyer type selector, message, consent checkbox). Store submissions on the Internet Computer backend so inquiries are not lost and can be retrieved later.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-choose-and-apply-a-cohesive-visual-theme-appropriate-for-an-eco-sustainable-handcrafted-jute-brand-avoid-blue-purple-define-consistent-colors-typography-spacing-and-component-styling-across-the-site-emphasizing-a-natural-earthy-aesthetic",
+      "title": "Choose and apply a cohesive visual theme appropriate for an eco-sustainable, handcrafted jute brand (avoid blue/purple). Define consistent colors, typography, spacing, and component styling across the site, emphasizing a natural/earthy aesthetic.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-social-presence-touchpoints-outbound-links-for-instagram-and-linkedin-in-the-site-footer-header-reflecting-the-digital-first-imc-plan-use-placeholder-urls-that-are-clearly-marked-and-easy-to-replace",
+      "title": "Add social presence touchpoints (outbound links) for Instagram and LinkedIn in the site footer/header, reflecting the digital-first IMC plan. Use placeholder URLs that are clearly marked and easy to replace.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-required-brand-images-as-static-assets-served-from-the-frontend-do-not-route-images-through-the-backend-include-a-logo-and-at-least-one-hero-brand-image-and-at-least-one-product-focused-visual-consistent-with-sustainable-jute-bags",
+      "title": "Render required brand images as static assets served from the frontend (do not route images through the backend). Include a logo and at least one hero/brand image and at least one product-focused visual consistent with sustainable jute bags.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-imc-objectives-and-imc-plan-sections-from-the-rendered-website-so-they-no-longer-appear-on-the-page",
+      "title": "Remove the “IMC Objectives” and “IMC Plan” sections from the rendered website so they no longer appear on the page.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-navigation-to-remove-any-links-buttons-that-point-to-the-removed-imc-sections",
+      "title": "Update the site navigation to remove any links/buttons that point to the removed IMC sections.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-clean-up-unused-frontend-code-related-to-the-removed-imc-sections-to-avoid-dead-imports-and-build-lint-warnings",
+      "title": "Clean up unused frontend code related to the removed IMC sections to avoid dead imports and build/lint warnings.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-2",
+      "summary": "Create Vanaprana brand website (sustainable jute bags; India-made, exported to Portugal) focused on credibility-first B2B messaging plus selective B2C visibility, without IMC Objectives or IMC Plan pages/sections",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Vanaprana",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

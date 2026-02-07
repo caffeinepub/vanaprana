@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the complete Vanaprana marketing site with header, footer, hero, and content sections (brand story, products, sustainability, B2B, contact) in a single-page layout.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky header component with logo and responsive navigation (desktop menu and mobile sheet) that smoothly scrolls to page sections, now with five navigation items.",
+  "frontend/src/components/SiteFooter.tsx": "Footer component with brand info, quick links, social media placeholders (Instagram/LinkedIn), and caffeine.ai attribution.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with background image, brand name, tagline, and CTAs to contact and products sections.",
+  "frontend/src/components/sections/BrandStorySection.tsx": "Brand story section explaining Vanaprana's meaning and three core values (nature, handcraft, global impact) with icon cards.",
+  "frontend/src/components/sections/ProductsSection.tsx": "Products section showcasing sustainable jute bags with product image, feature list, and use cases.",
+  "frontend/src/components/sections/SustainabilitySection.tsx": "Sustainability section presenting the three brand pillars (sustainability, durability, handcrafted value) and credibility/compliance information.",
+  "frontend/src/components/sections/B2BSection.tsx": "B2B-focused section for distributors and retailers with partnership benefits, three core pillars, and prominent CTAs for quotes and samples.",
+  "frontend/src/components/sections/ImcObjectivesSection.tsx": "IMC Objectives section detailing the four core objectives, five-part breakdown, channel-first strategy, and export rationale with accordion for additional context.",
+  "frontend/src/components/sections/ImcPlanSection.tsx": "IMC Plan section presenting the digital-first strategy, four-part tool mix, mass media exclusion rationale, and media selection logic.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section wrapper that embeds the inquiry form with introductory text for B2B and B2C inquiries.",
+  "frontend/src/components/InquiryForm.tsx": "Validated inquiry form component with fields for name, email, company, buyer type, message, and consent checkbox; handles submission with success state.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for submitting inquiry forms to the backend with proper type conversion and cache invalidation.",
+  "frontend/src/index.css": "Global styles with earth-toned OKLCH color system (forest greens, warm sands, terracotta accents) for light and dark modes, plus jute texture utility class.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Inter/Lora fonts, earth-toned color tokens, custom shadows, and design system utilities."
+}

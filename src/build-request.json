@@ -1,0 +1,70 @@
+{
+  "kind": "build_request",
+  "title": "Remove IMC Objectives and IMC Plan sections from the website",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Remove the “IMC Objectives” and “IMC Plan” sections from the rendered website so they no longer appear on the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "remove the IMC objectives and IMC plan from the website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The home page no longer renders the IMC Objectives section (no section with id=\"imc-objectives\" in the DOM).",
+        "The home page no longer renders the IMC Plan section (no section with id=\"imc-plan\" in the DOM).",
+        "No user-facing copy referencing “Integrated Marketing Communication Objectives” or “Integrated Marketing Communication Plan” is visible anywhere on the site."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update the site navigation to remove any links/buttons that point to the removed IMC sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "remove the IMC objectives and IMC plan from the website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The header navigation no longer includes “IMC Objectives” or “IMC Plan” items in desktop or mobile menus.",
+        "Clicking any remaining navigation items does not attempt to scroll to non-existent IMC section anchors (no console errors/warnings caused by missing IMC sections)."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Clean up unused frontend code related to the removed IMC sections to avoid dead imports and build/lint warnings.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "remove the IMC objectives and IMC plan from the website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "There are no unused imports of IMC sections in frontend/src/App.tsx or other updated files.",
+        "The frontend builds successfully after removal without TypeScript errors related to the IMC sections."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui or any other immutable paths listed in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Do not change the content or layout of remaining sections (Hero, Brand Story, Products, Sustainability, For Distributors, Contact) except as necessary to remove the IMC sections and related navigation.",
+    "Do not change backend functionality (inquiry storage/retrieval) since IMC sections are frontend-only."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

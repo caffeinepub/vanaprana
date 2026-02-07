@@ -1,0 +1,63 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove IMC sections and related navigation from marketing site",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Remove the IMC Objectives and IMC Plan sections so they no longer render anywhere on the site.",
+      "acceptanceCriteria": [
+        "The home page no longer renders the IMC Objectives section (no section with id=\"imc-objectives\" in the DOM).",
+        "The home page no longer renders the IMC Plan section (no section with id=\"imc-plan\" in the DOM).",
+        "No user-facing copy referencing “Integrated Marketing Communication Objectives” or “Integrated Marketing Communication Plan” is visible anywhere on the site."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Remove imports and rendering of ImcObjectivesSection and ImcPlanSection from the main page composition so no IMC sections are mounted in the DOM."
+        },
+        {
+          "path": "frontend/src/components/sections/ImcObjectivesSection.tsx",
+          "operation": "delete",
+          "description": "Delete the IMC Objectives section component so its DOM id/content (including \"Integrated Marketing Communication Objectives\") cannot appear anywhere on the site."
+        },
+        {
+          "path": "frontend/src/components/sections/ImcPlanSection.tsx",
+          "operation": "delete",
+          "description": "Delete the IMC Plan section component so its DOM id/content (including \"Integrated Marketing Communication Plan\") cannot appear anywhere on the site."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Remove IMC Objectives and IMC Plan items from site navigation so no links target removed anchors.",
+      "acceptanceCriteria": [
+        "The header navigation no longer includes “IMC Objectives” or “IMC Plan” items in desktop or mobile menus.",
+        "Clicking any remaining navigation items does not attempt to scroll to non-existent IMC section anchors (no console errors/warnings caused by missing IMC sections)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Update the navItems list to remove entries for 'IMC Objectives' (imc-objectives) and 'IMC Plan' (imc-plan) from both desktop and mobile menus; keep remaining navigation items unchanged."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Remove dead code and references related to the deleted IMC sections to prevent unused imports and build/lint warnings.",
+      "acceptanceCriteria": [
+        "There are no unused imports of IMC sections in frontend/src/App.tsx or other updated files.",
+        "The frontend builds successfully after removal without TypeScript errors related to the IMC sections."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure all IMC-related imports/usages are fully removed so TypeScript has no unresolved references after deleting the IMC section files."
+        }
+      ]
+    }
+  ]
+}
